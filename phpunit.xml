@@ -1,0 +1,30 @@
+<phpunit colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         coverageHtml="./report"
+         strict="true"
+         verbose="true"
+         bootstrap="tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="Synapse">
+            <directory>tests/Test/Synapse</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>src/</directory>
+        </whitelist>
+    </filter>
+    <groups>
+        <exclude>
+            <group>aws</group>
+        </exclude>
+    </groups>
+    <logging>
+        <log type="coverage-html" target="./phpunit-coverage" highlight="true"
+             lowUpperBound="33" highLowerBound="66" />
+    </logging>
+</phpunit>
