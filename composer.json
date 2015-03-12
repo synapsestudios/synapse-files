@@ -1,0 +1,25 @@
+{
+  "name": "synapsestudios/synapse-files",
+  "description": "Filesystem services, controllers, etc",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Synapse Studios"
+    }
+  ],
+  "require": {
+    "synapsestudios/synapse-base": "dev-master",
+    "rhumsaa/uuid"               : "~2.8",
+    "aws/aws-sdk-php"            : "~2.7",
+    "aws/aws-sdk-php-silex"      : "1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Synapse\\File\\": "src"
+    }
+  }
+}
