@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e73f5513211c7e16ad6f5457758220f5",
+    "hash": "66d2116f8549b96a47805ca4f3a8c59c",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1004,12 +1004,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "ecbfbcd37450b55ff647810b0846a30656bd9cbf"
+                "reference": "cafe524152eaaf799218d966b2921d6b8318ecff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/ecbfbcd37450b55ff647810b0846a30656bd9cbf",
-                "reference": "ecbfbcd37450b55ff647810b0846a30656bd9cbf",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/cafe524152eaaf799218d966b2921d6b8318ecff",
+                "reference": "cafe524152eaaf799218d966b2921d6b8318ecff",
                 "shasum": ""
             },
             "require": {
@@ -1056,7 +1056,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
-            "time": "2015-02-24 12:15:02"
+            "time": "2015-03-13 10:36:02"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1178,12 +1178,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "5251efde47d360a6558792412035053d01f1122f"
+                "reference": "fbabc623fd7c067ee3abcf44480a57796a7d9e1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/5251efde47d360a6558792412035053d01f1122f",
-                "reference": "5251efde47d360a6558792412035053d01f1122f",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/fbabc623fd7c067ee3abcf44480a57796a7d9e1f",
+                "reference": "fbabc623fd7c067ee3abcf44480a57796a7d9e1f",
                 "shasum": ""
             },
             "require": {
@@ -1247,7 +1247,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-12 14:31:07"
+            "time": "2015-03-13 09:55:11"
         },
         {
             "name": "symfony/routing",
@@ -1256,12 +1256,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "374ee1ef0e1d4d3aa8155ef04c2db99dd2be7710"
+                "reference": "301e060b1f449947b849b7a801d251b5cb84db4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/374ee1ef0e1d4d3aa8155ef04c2db99dd2be7710",
-                "reference": "374ee1ef0e1d4d3aa8155ef04c2db99dd2be7710",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/301e060b1f449947b849b7a801d251b5cb84db4a",
+                "reference": "301e060b1f449947b849b7a801d251b5cb84db4a",
                 "shasum": ""
             },
             "require": {
@@ -1316,7 +1316,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2015-02-18 10:38:04"
+            "time": "2015-03-13 09:55:11"
         },
         {
             "name": "symfony/security",
@@ -1401,12 +1401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "4ee3fd7bb0cd08da7fc86b2a212bad48d2b6ee27"
+                "reference": "ae63bb48c397b74866183d63e9c59f7b554a92a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/4ee3fd7bb0cd08da7fc86b2a212bad48d2b6ee27",
-                "reference": "4ee3fd7bb0cd08da7fc86b2a212bad48d2b6ee27",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/ae63bb48c397b74866183d63e9c59f7b554a92a3",
+                "reference": "ae63bb48c397b74866183d63e9c59f7b554a92a3",
                 "shasum": ""
             },
             "require": {
@@ -1451,7 +1451,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-07 07:43:00"
+            "time": "2015-03-13 09:55:11"
         },
         {
             "name": "symfony/validator",
@@ -1527,16 +1527,16 @@
         },
         {
             "name": "synapsestudios/synapse-base",
-            "version": "dev-master",
+            "version": "v1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/synapsestudios/synapse-base.git",
-                "reference": "c68ab80abbd04f7d900536d119e252d958a1f433"
+                "reference": "9bdb87bd0e62052a46e3461518c786c98136119e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/synapsestudios/synapse-base/zipball/c68ab80abbd04f7d900536d119e252d958a1f433",
-                "reference": "c68ab80abbd04f7d900536d119e252d958a1f433",
+                "url": "https://api.github.com/repos/synapsestudios/synapse-base/zipball/9bdb87bd0e62052a46e3461518c786c98136119e",
+                "reference": "9bdb87bd0e62052a46e3461518c786c98136119e",
                 "shasum": ""
             },
             "require": {
@@ -1574,7 +1574,7 @@
                 "MIT"
             ],
             "description": "Base code for the API template",
-            "time": "2015-03-10 17:12:13"
+            "time": "2015-02-10 17:39:38"
         },
         {
             "name": "zendframework/zend-db",
@@ -1775,12 +1775,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "9ed07757cd5c46fe33d28826327d274bd142a143"
+                "reference": "26530c5a425c6f67c9fe4fa10a3773adc96c418d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/9ed07757cd5c46fe33d28826327d274bd142a143",
-                "reference": "9ed07757cd5c46fe33d28826327d274bd142a143",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/26530c5a425c6f67c9fe4fa10a3773adc96c418d",
+                "reference": "26530c5a425c6f67c9fe4fa10a3773adc96c418d",
                 "shasum": ""
             },
             "require": {
@@ -1827,7 +1827,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-02-16 14:11:36"
+            "time": "2015-03-13 14:15:05"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2575,18 +2575,92 @@
             "time": "2014-12-15 14:25:24"
         },
         {
+            "name": "squizlabs/php_codesniffer",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "5046b0e01c416fc2b06df961d0673c85bcdc896c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5046b0e01c416fc2b06df961d0673c85bcdc896c",
+                "reference": "5046b0e01c416fc2b06df961d0673c85bcdc896c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.1.2"
+            },
+            "bin": [
+                "scripts/phpcs",
+                "scripts/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "CodeSniffer.php",
+                    "CodeSniffer/CLI.php",
+                    "CodeSniffer/Exception.php",
+                    "CodeSniffer/File.php",
+                    "CodeSniffer/Fixer.php",
+                    "CodeSniffer/Report.php",
+                    "CodeSniffer/Reporting.php",
+                    "CodeSniffer/Sniff.php",
+                    "CodeSniffer/Tokens.php",
+                    "CodeSniffer/Reports/",
+                    "CodeSniffer/Tokenizers/",
+                    "CodeSniffer/DocGenerators/",
+                    "CodeSniffer/Standards/AbstractPatternSniff.php",
+                    "CodeSniffer/Standards/AbstractScopeSniff.php",
+                    "CodeSniffer/Standards/AbstractVariableSniff.php",
+                    "CodeSniffer/Standards/IncorrectPatternException.php",
+                    "CodeSniffer/Standards/Generic/Sniffs/",
+                    "CodeSniffer/Standards/MySource/Sniffs/",
+                    "CodeSniffer/Standards/PEAR/Sniffs/",
+                    "CodeSniffer/Standards/PSR1/Sniffs/",
+                    "CodeSniffer/Standards/PSR2/Sniffs/",
+                    "CodeSniffer/Standards/Squiz/Sniffs/",
+                    "CodeSniffer/Standards/Zend/Sniffs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2015-03-04 02:07:03"
+        },
+        {
             "name": "symfony/yaml",
             "version": "dev-master",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "29682f882d6bd3388fab47fbe8cbd3c7ff9ea5ae"
+                "reference": "f6985a14085827f92173b72a7b224dcc448ef3f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/29682f882d6bd3388fab47fbe8cbd3c7ff9ea5ae",
-                "reference": "29682f882d6bd3388fab47fbe8cbd3c7ff9ea5ae",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/f6985a14085827f92173b72a7b224dcc448ef3f5",
+                "reference": "f6985a14085827f92173b72a7b224dcc448ef3f5",
                 "shasum": ""
             },
             "require": {
@@ -2622,14 +2696,12 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-07 07:44:26"
+            "time": "2015-03-13 10:36:02"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "synapsestudios/synapse-base": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
