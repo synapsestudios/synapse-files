@@ -22,17 +22,23 @@ class FileServiceProvider implements ServiceProviderInterface
                 $awsCredentialsService = $app['aws-credentials.service'];
                 $config                = $app['config']->load('file');
 
-                if ($awsCredentialsService->checkS3Credentials()) {
-                    $s3Client = $app['aws']->get('s3');
-
-                    return new S3FileService($config, $s3Client);
-                } else {
+                if ($config['filesystem'] === 'local') {
                     if (!isset($config['base_path'])) {
                         throw new \RuntimeException('Invalid filesystem (file) configuration - missing base_path');
                     }
 
                     return new LocalFileService($config['base_path']);
+                } elseif ($config['filesystem'] === 's3') {
+                    if (array_key_exists('bucket', $config) && $awsCredentialsService->checkS3Credentials()) {
+                        $s3Client = $app['aws']->get('s3');
+
+                        return new S3FileService($config, $s3Client);
+                    } else {
+                        throw new \RuntimeException('Invalid file system configuration (s3)');
+                    }
                 }
+
+                throw new \RuntimeException('Invalid filesystem configuration');
             }
         );
     }
