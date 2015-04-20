@@ -104,4 +104,19 @@ abstract class AbstractFileController extends AbstractRestController
 
         return new StreamedResponse($stream, 200, $headers);
     }
+
+    /**
+     * @param Request            $request
+     * @param AbstractFileEntity $fileEntity
+     *
+     * @return bool|\Symfony\Component\HttpFoundation\Response
+     */
+    public function delete(Request $request, $fileEntity)
+    {
+        if (!$fileEntity) {
+            return $this->createNotFoundResponse();
+        }
+
+        return $this->fileService->delete($fileEntity->getPath());
+    }
 }
