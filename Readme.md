@@ -16,6 +16,7 @@ To use: register the following services in your application:
 Create a file.php config file with the following contents:
 ```
 return [
+    'filesystem' => 'local',
     'base_path'  => realpath(__DIR__.'/..').'/files',
 ];
 ```
@@ -24,6 +25,7 @@ For production, file config should be:
 ```
 <?php
 return [
+    'filesystem' => 's3',
     'bucket'     => 'some-existing-bucket',
     'base_path'  => 'files',
 ];
