@@ -80,7 +80,7 @@ class S3FileService extends AbstractFileService implements FileServiceInterface
      */
     public function loadFile(AbstractFileEntity $fileEntity)
     {
-        return $this->load($fileEntity->getPath().DIRECTORY_SEPARATOR.$fileEntity->getId());
+        return $this->load($fileEntity->getPath());
     }
 
     /**

@@ -133,7 +133,7 @@ class LocalFileService extends AbstractFileService implements FileServiceInterfa
      */
     public function loadFile(AbstractFileEntity $fileEntity)
     {
-        return $this->load($fileEntity->getRecordType() . DIRECTORY_SEPARATOR . $fileEntity->getId());
+        return $this->load($fileEntity->getPath());
     }
 
     /**
