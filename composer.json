@@ -4,7 +4,7 @@
   "license": "MIT",
   "minimum-stability": "dev",
   "require": {
-    "synapsestudios/synapse-base": "~2",
+    "synapsestudios/synapse-base": ">2",
     "rhumsaa/uuid"               : "~2.8",
     "aws/aws-sdk-php"            : "~2.7",
     "aws/aws-sdk-php-silex"      : "1.*"
