@@ -38,6 +38,14 @@ class S3FileServiceTest extends \PHPUnit_Framework_TestCase
         stream_wrapper_register('s3', '\Test\Synapse\File\MockStreamWrapper');
     }
 
+    protected function withCopyObjectReturning()
+    {
+        $this->s3Client
+            ->expects($this->once())
+            ->method('copyObject')
+            ->willReturn(true);
+    }
+
     protected function withPutObjectReturning()
     {
         $this->s3Client
@@ -166,6 +174,20 @@ class S3FileServiceTest extends \PHPUnit_Framework_TestCase
 
         $success = $this->fs->update($path . DIRECTORY_SEPARATOR . $fileName, $data . '1');
         $this->assertTrue($success, 'Unable to update file');
+    }
+
+    public function testCanRenameFile()
+    {
+        $this->setupFileService();
+        $this->withCopyObjectReturning();
+        $this->withDeleteObjectReturning();
+
+        $oldName = 'old/file/path.txt';
+        $newName = 'new/file/path.txt';
+
+        $success = $this->fs->rename($oldName, $newName);
+
+        $this->assertTrue($success, 'Could not rename file');
     }
 
     public function testCanUpdateFileFromResource()
