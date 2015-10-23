@@ -123,6 +123,30 @@ class S3FileService extends AbstractFileService implements FileServiceInterface
     }
 
     /**
+     *
+     * @param string $oldName
+     * @param string $newName
+     *
+     * @return bool - true
+     */
+    public function rename($oldName, $newName)
+    {
+        try {
+            $this->s3->copyObject([
+                'Bucket'     => $this->bucket,
+                'Key'        => $newName,
+                'CopySource' => sprintf('%s/%s', $this->bucket, $oldName),
+            ]);
+
+            $this->delete($oldName);
+        } catch (\Exception $e) {
+            throw new FileException('File was not renamed', $e->getCode(), $e);
+        }
+
+        return true;
+    }
+
+    /**
      * @param $path
      * @param $mode
      *
