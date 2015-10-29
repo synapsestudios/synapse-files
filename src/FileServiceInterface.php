@@ -43,6 +43,15 @@ interface FileServiceInterface
     public function update($path, $data);
 
     /**
+     *
+     * @param string $oldName
+     * @param string $newName
+     *
+     * @return bool - true if file is renamed
+     */
+    public function rename($oldName, $newName);
+
+    /**
      * Get mime type for file
      *
      * @param string $path

@@ -169,6 +169,22 @@ class LocalFileServiceTest extends \PHPUnit_Framework_TestCase
         );
     }
 
+    public function testCanRenameFile()
+    {
+        $this->setupFileService();
+
+        $oldName = 'old/file/path.txt';
+        $newName = 'new/file/path.txt';
+
+        $data = self::TEST_BASE_PATH;
+
+        $this->fs->save($path, $data);
+
+        $success = $this->fs->rename($oldName, $newName);
+
+        $this->assertTrue($success, 'Could not rename file');
+    }
+
     public function testCanUpdateFileWithResource()
     {
         $data = fopen('php://memory', 'rw');

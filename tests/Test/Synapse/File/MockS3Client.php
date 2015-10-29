@@ -24,4 +24,9 @@ class MockS3Client extends S3Client
     {
         return true;
     }
+
+    public function copyObject()
+    {
+        return true;
+    }
 }

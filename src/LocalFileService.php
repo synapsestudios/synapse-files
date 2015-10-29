@@ -34,7 +34,6 @@ class LocalFileService extends AbstractFileService implements FileServiceInterfa
         }
     }
 
-
     /**
      *
      * @param string          $path
@@ -176,6 +175,24 @@ class LocalFileService extends AbstractFileService implements FileServiceInterfa
         }
 
         return true;
+    }
+
+    /**
+     *
+     * @param string $oldName
+     * @param string $newName
+     *
+     * @return bool - true if file is renamed
+     */
+    public function rename($oldName, $newName)
+    {
+        $fullPath = $this->basePath.DIRECTORY_SEPARATOR;
+        $this->checkLocalFileExists($fullPath.$oldName, $oldName);
+
+        return rename(
+            $fullPath.$oldName,
+            $fullPath.$newName
+        );
     }
 
     /**
