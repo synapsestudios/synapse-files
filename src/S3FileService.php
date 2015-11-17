@@ -51,12 +51,14 @@ class S3FileService extends AbstractFileService implements FileServiceInterface
     public function save($path, $data, $contentType = null)
     {
         try {
-            $this->s3->putObject([
+            $promise = $this->s3->putObjectAsync([
                 'Bucket'      => $this->bucket,
                 'Key'         => $path,
                 'Body'        => $data,
                 'ContentType' => $contentType,
             ]);
+
+            $promise->wait();
         } catch (\Exception $e) {
             throw new FileException('Unable to save file', $e->getCode(), $e);
         }

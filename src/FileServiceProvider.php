@@ -30,7 +30,11 @@ class FileServiceProvider implements ServiceProviderInterface
                     return new LocalFileService($config['base_path']);
                 } elseif ($config['filesystem'] === 's3') {
                     if (array_key_exists('bucket', $config) && $awsCredentialsService->checkS3Credentials()) {
-                        $s3Client = $app['aws']->get('s3');
+                        $s3Client = $app['aws']->createClient('s3', [
+                            'region'           => $config['region'],
+                            'version'          => $config['version'],
+                            'signature_vesion' => $config['signature_version'],
+                        ]);
 
                         return new S3FileService($config, $s3Client);
                     } else {
